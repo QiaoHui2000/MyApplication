@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_drawer_layout"
+    android:padding="20dp"
+    tools:ignore="HardcodedText"
+    tools:context=".ThreadedActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".ThreadedActivity">
+
+        <ImageView
+            android:id="@+id/imgVwProfile"
+            android:layout_width="225dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginBottom="29dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvGreet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+        <Button
+            android:id="@+id/btnTakePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="fnTakePic"
+            android:text="Take Picture!"
+            app:layout_constraintEnd_toEndOf="@+id/tvGreet"
+            app:layout_constraintStart_toStartOf="@+id/tvGreet"
+            app:layout_constraintTop_toBottomOf="@+id/tvGreet" />
+
+        <TextView
+            android:id="@+id/tvGreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Hello world!"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnTakePic"
+            app:layout_constraintEnd_toEndOf="@+id/imgVwProfile"
+            app:layout_constraintStart_toStartOf="@+id/imgVwProfile"
+            app:layout_constraintTop_toBottomOf="@+id/imgVwProfile" />
+
+        <Button
+            android:id="@+id/btnAsyncTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get External Img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTakePic"
+            app:layout_constraintVertical_bias="0.206" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SecondActivityCam">
+
+        <TextView
+            android:id="@+id/txtVwGreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

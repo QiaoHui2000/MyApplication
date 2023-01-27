@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_main_activity"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Main Activity" />
+
+    <item
+        android:id="@+id/nav_first_activity"
+        android:icon="@drawable/ic_baseline_co_present_24"
+        android:title="First Activity" />
+
+    <item
+        android:id="@+id/nav_camera_activity"
+        android:icon="@drawable/ic_baseline_camera_24"
+        android:title="Camera Activity" />
+
+    <item
+        android:id="@+id/nav_student_registration_activity"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Student Registration Activity" />
+
+    <item
+        android:id="@+id/nav_search_student_activity"
+        android:icon="@drawable/ic_baseline_manage_search_24"
+        android:title="Search Student Activity" />
+
+    <item
+        android:id="@+id/nav_student_main_activity"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Student Main Activity" />
+
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Logout" />
+
+</menu>

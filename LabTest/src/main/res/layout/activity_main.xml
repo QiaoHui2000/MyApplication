@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="229dp"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glazed Donut RM3.5 pc"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView1"
+        android:id="@+id/tvGlazed"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGlazed"
+        android:hint="Item Quantity eg: 2, 3, 5"
+        android:inputType="numberDecimal"
+        android:id="@+id/edtGrazed"
+        />
+
+    <ImageView
+        android:layout_width="229dp"
+        android:layout_height="113dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtGrazed"
+        tools:srcCompat="@tools:sample/avatars"
+        android:id="@+id/imageView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stuffed Bomboloni RM2.50 pc"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView2"
+        android:id="@+id/tvStuffed"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStuffed"
+        android:inputType="numberDecimal"
+        android:hint="Item Quantity eg: 2, 3, 5"
+        android:id="@+id/edtStuffed"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStuffed"
+        android:text="CALCULATE"
+        android:id="@+id/btnCalculate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:id="@+id/tvTotalItem"
+        android:text="Total Item:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalItem"
+        android:id="@+id/tvTotalPrice"
+        android:text="Total Price to Pay: RM "/>
+
+</RelativeLayout>
+
+</ScrollView>
